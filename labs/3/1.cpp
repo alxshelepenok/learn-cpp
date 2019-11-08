@@ -2,16 +2,10 @@
 
 using namespace std;
 
-/**
- * Function randDouble return random number.
- */
 double randDouble(double min, double max) {
 	return (double)(rand()) / RAND_MAX * (max - min) + min;
 }
 
-/**
- * Class Array provides the interface for array manipulation.
- */
 class Array {
 private:
 	int length;
@@ -19,8 +13,6 @@ private:
 	double average;
 	
 public:
-
-	// Constructor
 	Array(int l) {
 		length = l;
 		array = new double[length];
@@ -30,19 +22,16 @@ public:
 		}
 	}
 
-	// Destructor
 	~Array() {
 		delete array;
 	}
 
-	// Method printArray print all element of Array.
 	void printArray() {
 		for (int i = 0; i <= length; i++) {
 			cout << " " << array[i];
 		}		
 	}
 
-	// Method calcAverage calc average elements of Array.
 	void calcAverage() {
 		double sum = 0;
 
@@ -53,7 +42,6 @@ public:
 		average = sum/length;
 	}
 
-	// Method transformArray transform source array.
 	void transformArray() {
 		calcAverage();
 
@@ -62,7 +50,6 @@ public:
 		}
 	}
 };
-
 
 int main() {
 	int length;

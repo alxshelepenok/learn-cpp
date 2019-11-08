@@ -3,27 +3,20 @@
 
 using namespace std;
 
-/**
- * Class Triangle provides the interface
- * for calculating area and perimeter of the triangle.
- */
 class Triangle {
 private:
 	double aSide, bSide, cSide;
 public:
-	// Constructor
 	Triangle(double a, double b, double c) {
 		aSide = a;
 		bSide = b;
 		cSide = c;
 	}
 
-	// Method calcTrianglePerimeter return perimeter
 	double calcTrianglePerimeter() {
 		return aSide + bSide + cSide;
 	}
 
-	// Method calcTrianglePerimeter return area
 	double calcTriangleArea() {
 		double semiperimeter;
 
