@@ -1,4 +1,4 @@
-# learn_cpp
+# learn-cpp
 
 All c++ code for learning
 
