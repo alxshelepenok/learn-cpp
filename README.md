@@ -1,6 +1,6 @@
 # learn-cpp
 
-All c++ code for learning
+All c++ code for learning.
 
 ## License
 The MIT license.
